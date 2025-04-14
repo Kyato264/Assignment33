@@ -3,10 +3,8 @@ import { useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import WeekBar from "../components/WeekBar";
 import TaskPopup from "../components/TaskPopup";
-import { getTasksFromStorage } from "../utils/localStorage";
+import { getTasksFromStorage, initializeTasksInStorage } from "../utils/localStorage";
 import "../styles/globals.css";
-
-
 
 export default function TaskList() {
   const [tasks, setTasks] = useState([]); // All tasks
@@ -19,9 +17,13 @@ export default function TaskList() {
   const [startDate, setStartDate] = useState(new Date());
 
   useEffect(() => {
-    const storedTasks = getTasksFromStorage() || []; // Ensure default empty array if no tasks found
-    console.log("Loaded tasks:", storedTasks);
-    setTasks(storedTasks);
+    console.log("Useeffect running");
+    if (typeof window !== "undefined") {
+      initializeTasksInStorage();
+      const storedTasks = getTasksFromStorage() || [];
+      console.log("Loaded tasks:", storedTasks);
+      setTasks(storedTasks);
+    }
   }, []);
 
   // Filter tasks based on search value and filters
