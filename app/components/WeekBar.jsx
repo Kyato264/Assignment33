@@ -71,7 +71,7 @@ export default function WeekBar({ tasks }) {
               {dayTasks.length > 0 ? (
                 dayTasks.map((task) => (
                   <li key={task.id} className={styles.taskItem}>
-                    <Link href={`/task/${task.id}`}>{task.title}</Link>
+                    <span>{task.title}</span>
                   </li>
                 ))
               ) : (
