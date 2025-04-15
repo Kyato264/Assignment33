@@ -22,7 +22,7 @@ npm run dev
 # or
 yarn dev
 # or
-pnpm dev
+pnpm dev i
 # or
 bun dev
 ```
@@ -34,6 +34,8 @@ To use the page in a mobile format and have access to swipe features please do t
 Right click the page and select inspect or inspect element depending on your browser and select the below button.
 
 ![image](https://github.com/user-attachments/assets/1f4258d4-cad8-4590-b6a7-f5dd55357140)
+
+The recommended dimensions supported by google is "Samsung Galaxy S20 Ultra"
 
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
