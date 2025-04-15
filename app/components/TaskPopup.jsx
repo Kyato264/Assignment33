@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import styles from "/styles/TaskPopup.module.css";
+import styles from "../styles/TaskPopup.module.css";
 
 export default function TaskPopup({ tasks, show, onClose }) {
   const [query, setQuery] = useState("");

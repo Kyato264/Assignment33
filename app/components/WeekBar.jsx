@@ -2,9 +2,8 @@
 "use client";
 import { useState } from "react";
 import { formatDate, isOverdue } from "../utils/date";
-import Link from "next/link";
 import { useSwipeable } from "react-swipeable";
-import styles from "/styles/WeekBar.module.css";
+import styles from "../styles/WeekBar.module.css";
 
 export default function WeekBar({ tasks }) {
   const [visibleTaskList, setVisibleTaskList] = useState(null); // Track which task list is visible
