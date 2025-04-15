@@ -65,9 +65,9 @@ select{
   justify-content: center;
   align-items: center;  
   gap: 20px;            
-  height: auto;           
-  padding: 10px;        
+  height: auto;                 
   font-size: 50%;
+  width:100%
 }
 
 

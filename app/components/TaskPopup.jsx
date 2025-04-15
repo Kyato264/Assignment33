@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
 import styles from "../styles/TaskPopup.module.css";
 
 export default function TaskPopup({ tasks, show, onClose }) {
@@ -18,8 +17,8 @@ export default function TaskPopup({ tasks, show, onClose }) {
       })
     : [];
 
-  if (!show) {
-    return null; // Do not render anything if `show` is false
+  if (!show) { 
+    return null; 
   }
 
   return (

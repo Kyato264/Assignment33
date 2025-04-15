@@ -6,7 +6,7 @@ import { useSwipeable } from "react-swipeable";
 import styles from "../styles/WeekBar.module.css";
 
 export default function WeekBar({ tasks }) {
-  const [visibleTaskList, setVisibleTaskList] = useState(null); // Track which task list is visible
+  const [visibleTaskList, setVisibleTaskList] = useState(null);
   const [week, setWeek] = useState(() => {
     const today = new Date();
     return Array.from({ length: 7 }, (_, i) => {

@@ -127,11 +127,11 @@ export default function TaskList() {
                   onChange={(e) => setPriorityFilter(e.target.value)}
                 >
                   <option value="">Priorities</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
+                  <option value="1">Critical</option>
+                  <option value="2">Urgent</option>
+                  <option value="3">High Priority</option>
+                  <option value="4">Medium Priority</option>
+                  <option value="5">Low Priority</option>
                 </select>
               </div>
 
