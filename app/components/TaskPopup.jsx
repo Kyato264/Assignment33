@@ -35,7 +35,7 @@ export default function TaskPopup({ tasks, show, onClose }) {
           {filtered.length > 0 ? (
             filtered.map((task) => (
               <div key={task.id}>
-                <Link href={`/task/${task.id}`}>{task.title}</Link>
+                <span>{task.title}</span>
               </div>
             ))
           ) : (

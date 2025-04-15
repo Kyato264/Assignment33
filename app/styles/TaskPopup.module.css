@@ -15,31 +15,36 @@
     transition: opacity 0.3s ease-in-out;
   }
   
-  .popup-overlay {
-    position: fixed; /* Make the popup fixed to the viewport */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    z-index: 1000;
-  }
+
   
   /* Popup content */
   .popup-content {
     background: white;
     border-radius: 8px;
     padding: 20px;
-    width: 80%; /* Adjust width as needed */
-    max-width: 500px; /* Limit the maximum width */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
     text-align: center;
-    position: relative;
+    position: fixed;
+    z-index: 1000;
+    justify-content: center;
+    left: auto;
+    top: auto;
+    width: 81%;
+    min-height: 70%;
+
+  }
+
+  .popup-overlay {
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    height:80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
   }
   
   .popup.show {
@@ -56,4 +61,5 @@
 
   .task-list {
     margin-top: 20px;
+    padding:10px
   }
