@@ -48,7 +48,7 @@ export default function WeekBar({ tasks }) {
   });
 
   return (
-    <div {...swipeHandlers} id="week-bar" className={styles.weekBar}>
+    <div {...swipeHandlers} id="WeekBarContainer" className={styles.weekBar}>
       {week.map((date) => {
         const dateStr = date.toISOString().split("T")[0];
         const dayTasks = tasks.filter((t) => t.dueDate === dateStr);
@@ -57,7 +57,7 @@ export default function WeekBar({ tasks }) {
           <div
             key={dateStr}
             className={`${styles.weekBar} ${
-              dayTasks.some((t) => isOverdue(t.dueDate)) ? styles.overdue : ""
+              dayTasks.some((t) => isOverdue(t.dueDate)) ? styles.overdue : styles.notoverdue
             }`}
             onClick={() => toggleTaskList(dateStr)}
           >

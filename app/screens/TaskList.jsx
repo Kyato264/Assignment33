@@ -171,7 +171,7 @@ export default function TaskList() {
             <p>No completed tasks.</p>
           ) : (
             tasks.filter(task => task.status === "completed").map(task => (
-              <div class ="SwipedTasked" key={task.id}>
+              <div className ="SwipedTasked" key={task.id}>
                 <h3>{task.title}</h3>
                 <p>{task.description}</p>
                 <p>Completed: {task.dueDate}</p>
@@ -189,7 +189,7 @@ export default function TaskList() {
           <p>No high-priority tasks.</p>
          ) : (
           tasks.filter(task => task.priority <= 3 && task.status !== "completed").map(task => (
-            <div class ="SwipedTasked" key={task.id}>
+            <div className ="SwipedTasked" key={task.id}>
               <h3>{task.title}</h3>
               <p>{task.description}</p>
               <p>Completed: {task.dueDate}</p>
