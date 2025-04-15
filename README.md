@@ -2,7 +2,20 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+First go the folder location and type cmd in the bar at the top
+![image](https://github.com/user-attachments/assets/9db87700-da03-4a98-9eff-9c80fdc2507d)
+
+It should open the cmd of the folder
+
+Please do the following
+
+```bash
+
+npm install
+
+```
+
+Next, run the development server:
 
 ```bash
 npm run dev
@@ -15,6 +28,13 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+To use the page in a mobile format and have access to swipe features please do the following:
+
+Right click the page and select inspect or inspect element depending on your browser and select the below button.
+
+![image](https://github.com/user-attachments/assets/1f4258d4-cad8-4590-b6a7-f5dd55357140)
+
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
