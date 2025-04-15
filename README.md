@@ -29,6 +29,13 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+To use the page in a mobile format and have access to swipe features please do the following:
+
+Right click the page and select inspect or inspect element depending on your browser and select the below button.
+
+![image](https://github.com/user-attachments/assets/1f4258d4-cad8-4590-b6a7-f5dd55357140)
+
+
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
