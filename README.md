@@ -2,7 +2,20 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+First go the folder location and type cmd in the bar at the top
+![image](https://github.com/user-attachments/assets/9db87700-da03-4a98-9eff-9c80fdc2507d)
+
+It should open the cmd of the folder
+
+Please do the following
+
+```bash
+
+npm react install
+
+```
+
+Next, run the development server:
 
 ```bash
 npm run dev
