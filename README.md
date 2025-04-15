@@ -11,7 +11,7 @@ Please do the following
 
 ```bash
 
-npm react install
+npm install
 
 ```
 
